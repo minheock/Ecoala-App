@@ -1,6 +1,6 @@
 {
-  "expo": {
-    "name": "ecotest",
+  "expo": {       
+    "name": "Ecoala",
     "slug": "ecotest",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.minhyeock.Ecoala"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.jpg"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "856e634f-c9e8-4b74-a457-73b82ff7cd71"
+      }
     }
   }
 }
