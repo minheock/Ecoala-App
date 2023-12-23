@@ -1,7 +1,7 @@
 // main.js
 import React,{useEffect, useState} from 'react';
 import { Menu } from 'native-base';
-import { View, Text,Dimensions  } from 'react-native';
+import { View, Text,Dimensions , ScrollView   } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 import { NativeBaseProvider, Center, Box, Heading,Spinner , VStack, FormControl, Input, Link, Button, HStack , Image, useToast} from 'native-base';
@@ -239,7 +239,8 @@ const Main = () => {
   
 
     return (
-      <View >
+      <View style={{ flex: 1 }}>
+         <ScrollView>
         <Center style={{ marginTop: 20 }}>
           <Heading>오늘의 전력사용량</Heading>         
         
@@ -289,6 +290,7 @@ const Main = () => {
             <Text style={{color: 'white', fontWeight:700}} > 필요 소나무: {treeEle}</Text>                                                           
           </View>
        </Center>
+       </ScrollView>
     </View>
     );
   }else{
